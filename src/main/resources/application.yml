@@ -1,0 +1,12 @@
+micronaut:
+  server:
+    port: 8081
+  application:
+    name: micronautWebService
+  jdbc:postgresql://postgres-net:5432/web_service?currentSchema=bookstore
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:postgresql://localhost:5432/web_service?currentSchema=bookstore`}
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
